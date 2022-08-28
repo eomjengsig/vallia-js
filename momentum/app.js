@@ -1,24 +1,15 @@
-const calculator = {
-  plus: function (a, b) {
-    return a + b;
-  },
-  minus: function (a, b) {
-    return a - b;
-  },
-  divide: function (a, b) {
-    return a / b;
-  },
-  times: function (a, b) {
-    return a * b;
-  },
-  power: function (a, b) {
-    return a ** b;
-  },
-};
-const plusResult = calculator.plus(2, 3);
-const minusResult = calculator.minus(plusResult, 10);
-const timesResult = calculator.times(10, minusResult);
-const divideResult = calculator.divide(timesResult, plusResult);
-const powerResult = calculator.power(divideResult, minusResult);
+const age = parseInt(prompt("How old are you?"));
 
-console.log(powerResult);
+if (isNaN(age) || age < 0) {
+  console.log("Only positive number,please.");
+} else if (age < 18) {
+  console.log("You are too young.");
+} else if (age >= 18 && age <= 50) {
+  console.log("You can drink.");
+} else if (age === 100) {
+  console.log("WoW!");
+} else if (age > 50) {
+  console.log("Stop drink.");
+}
+
+// if((a && b) || (c && d)) {} 이렇게도 가능
