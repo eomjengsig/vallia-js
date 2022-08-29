@@ -1,5 +1,8 @@
-const title = document.querySelectorAll(".hello h1");
+const title = document.querySelector(".hello h1");
 
-console.log(title);
+function handleTitleClick() {
+  console.log("title was clicked!");
+  title.style.color = "blue";
+}
 
-title.innerText = "Got you!";
+title.addEventListener("click", handleTitleClick);
