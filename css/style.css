@@ -1,0 +1,84 @@
+.hidden {
+  display: none;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+*:not(img) {
+  z-index: 2;
+}
+
+img {
+  position: absolute;
+
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+}
+
+#clock {
+  color: white;
+  font-size: 80px;
+  margin-top: 200px;
+  margin-bottom: 20px;
+}
+
+input {
+  height: 30px;
+  background: none;
+  background-color: rgba(200, 200, 100, 0.3);
+  border: none;
+  color: dodgerblue;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+input::placeholder {
+  color: yellowgreen;
+  text-align: center;
+}
+#greeting {
+  color: white;
+  margin-top: 0px;
+}
+input:focus {
+  outline: none;
+}
+
+#button {
+  color: yellowgreen;
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  color: bisque;
+  font-size: 10px;
+}
+#weather {
+  position: absolute;
+  margin-top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: bisque;
+}
+#todo-list {
+  list-style: none;
+  color: dodgerblue;
+}
+button {
+  background: none;
+  outline: none;
+  border: none;
+  color: coral;
+}
